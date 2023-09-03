@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Kelvin Njuiri's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio! This repository showcases my web development projects and provides an overview of my skills, experience, and interests.
 
-## Available Scripts
+![Portfolio Preview](https://your-image-url.com/preview.png)
 
-In the project directory, you can run:
+## About Me
 
-### `npm start`
+I am a passionate web developer with a strong foundation in front-end and back-end technologies. I love building web applications that solve real-world problems and deliver engaging user experiences. Here's a little more about me:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🌐 Portfolio: [https://www.kelvinnjuiri.dev](https://www.kelvinnjuiri.dev)
+- 📧 Email: [your.email@example.com](mailto:your.email@example.com)
+- 🌟 LinkedIn: [Connect with me](https://www.linkedin.com/in/yourusername)
+- 📚 Blog: [Read my tech articles](https://www.kelvinnjuiri.dev/blog)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Projects
 
-### `npm test`
+Here are some of the exciting projects I've worked on:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project 1: [Project Name 1](https://github.com/yourusername/project-name-1)
 
-### `npm run build`
+- Description: A brief description of the project.
+- Technologies Used: List the technologies, libraries, and frameworks used.
+- Demo: Provide a link to a live demo or hosted version (if available).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Project 2: [Project Name 2](https://github.com/yourusername/project-name-2)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Description: Another project description.
+- Technologies Used: List the technologies, libraries, and frameworks used.
+- Demo: Provide a link to a live demo or hosted version (if available).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ...
 
-### `npm run eject`
+## Skills
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Here are some of the technologies and skills I excel in:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Front-End:** HTML, CSS, JavaScript, React, Vue.js
+- **Back-End:** Node.js, Express.js, MongoDB, SQL
+- **Tools:** Git, VS Code, Docker
+- **UI/UX Design:** Figma, Adobe XD
+- **Other:** RESTful APIs, GraphQL, Responsive Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Resume
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can view my detailed resume [here](https://www.kelvinnjuiri.dev/resume.pdf) to learn more about my education and work experience.
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I'm always open to new opportunities and collaborations. Feel free to reach out to me via email at [your.email@example.com](mailto:your.email@example.com) or connect with me on LinkedIn.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Let's build something amazing together! 😃
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2023 Kelvin Njuiri. All Rights Reserved.
