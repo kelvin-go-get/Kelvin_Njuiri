@@ -9,9 +9,9 @@ Welcome to my personal portfolio! This repository showcases my web development p
 I am a passionate web developer with a strong foundation in front-end and back-end technologies. I love building web applications that solve real-world problems and deliver engaging user experiences. Here's a little more about me:
 
 - 🌐 Portfolio: [https://www.kelvinnjuiri.dev](https://www.kelvinnjuiri.dev)
-- 📧 Email: [your.email@example.com](mailto:your.email@example.com)
-- 🌟 LinkedIn: [Connect with me](https://www.linkedin.com/in/yourusername)
-- 📚 Blog: [Read my tech articles](https://www.kelvinnjuiri.dev/blog)
+- 📧 Email: [knjuiri@gmail.com](mailto:knjuiri@gmail.com)
+- 🌟 LinkedIn: [Connect with me](https://www.linkedin.com/in/kelvin-njuiri/)
+- 📚 Blog: [Read my tech articles](https://medium.com/@knjuiri)
 
 ## Projects
 
