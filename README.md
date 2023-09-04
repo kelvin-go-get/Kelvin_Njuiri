@@ -2,11 +2,10 @@
 
 Welcome to my personal portfolio! This repository showcases my web development projects and provides an overview of my skills, experience, and interests.
 
-<div>
+
   <a href="https://www.kelvinnjuiri.dev">
     <img align="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzYEn08XwpjMadHl4hIVQ7iIgh-PD_0Rul_A&usqp=CAU" alt="Portfolio Preview">
   </a>
-</div>
 
 ## About Me
 
