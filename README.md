@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This repository showcases my web development projects and provides an overview of my skills, experience, and interests.
 
-![Portfolio Preview](https://t3.ftcdn.net/jpg/03/19/67/24/360_F_319672457_RgWdAgsS2MzHQRvU5jJWvpyCDwIYr8O9.jpg)
+![Portfolio Preview](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzYEn08XwpjMadHl4hIVQ7iIgh-PD_0Rul_A&usqp=CAU)
 
 ## About Me
 
