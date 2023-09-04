@@ -2,11 +2,15 @@
 
 Welcome to my personal portfolio! This repository showcases my web development projects and provides an overview of my skills, experience, and interests.
 
-![Portfolio Preview](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzYEn08XwpjMadHl4hIVQ7iIgh-PD_0Rul_A&usqp=CAU)
+<div align="center">
+  <a href="https://www.kelvinnjuiri.dev">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzYEn08XwpjMadHl4hIVQ7iIgh-PD_0Rul_A&usqp=CAU" alt="Portfolio Preview">
+  </a>
+</div>
 
 ## About Me
 
-I am a passionate web developer with a strong foundation in software engeenering. I love building web applications that solve real-world problems and deliver engaging user experiences. Here's a little more about me:
+I am a passionate web developer with a strong foundation in software engineering. I love building web applications that solve real-world problems and deliver engaging user experiences. Here's a little more about me:
 
 - 🌐 Portfolio: [https://www.kelvinnjuiri.dev](https://www.kelvinnjuiri.dev)
 - 📧 Email: [knjuiri@gmail.com](mailto:knjuiri@gmail.com)
@@ -29,7 +33,7 @@ You can view my detailed resume [here](https://www.kelvinnjuiri.dev/resume.pdf) 
 
 ## Contact
 
-I'm always open to new opportunities and collaborations. Feel free to reach out to me via email at [your.email@example.com](mailto:your.email@example.com) or connect with me on LinkedIn.
+I'm always open to new opportunities and collaborations. Feel free to reach out to me via email at [knjuiri@gmail.com](mailto:knjuiri@gmail.com) or connect with me on LinkedIn.
 
 Let's build something amazing together! 😃
 
