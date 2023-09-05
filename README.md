@@ -21,11 +21,10 @@ I am a passionate web developer with a strong foundation in software engineering
 
 Here are some of the technologies and skills I excel in:
 
-- **Front-End:** HTML, CSS, JavaScript, React, Vue.js
-- **Back-End:** Node.js, Express.js, MongoDB, SQL
-- **Tools:** Git, VS Code, Docker
-- **UI/UX Design:** Figma, Adobe XD
-- **Other:** RESTful APIs, GraphQL, Responsive Design
+- **Front-End:** HTML, CSS, JavaScript, React
+- **Tools:** Git, VS Code
+- **UI/UX Design:** Figma
+- **Other:**  Responsive Design
 
 ## Resume
 
