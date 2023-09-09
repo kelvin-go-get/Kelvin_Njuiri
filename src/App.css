@@ -15,16 +15,16 @@ button,
 input,
 textarea {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: 18px;
 }
 body{
   
-  color: var(--text-color);
+  color: #000;
   background: transparent;
 }
 h1, h2, h3{
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+  color: #000;
+  font-weight: 600;
 }
 ul{
   list-style: none;
@@ -67,19 +67,8 @@ img {
   display: grid;
   gap: 1.5rem;
 }
-.button{
-  display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 1.25rem 2rem;
-  border-radius: 1rem;
-  font-weight: var(--font-medium);
-}
-.button:hover{
-  background-color: var(--title-color-dark);
-}
 .button_icon{
-  margin-left: var(--mb-0-5);
+  margin-left: 15px;
 }
 .button--flex{
   display: inline-flex;
@@ -87,13 +76,13 @@ img {
 }
 @media screen and (max-width:992px){
   .container{
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 @media screen and (max-width:425px) {
   .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
