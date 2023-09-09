@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react";
 // Correct the import path
-import "./main.css"
-import BackgroundVideo from '../../Assets/back2.mp4';
-
+import "./main.css";
 
 const main = () => {
   return (
     <div className="background-container">
-        <video autoPlay loop muted>
-        <source src={BackgroundVideo} type="video/mp4" />
-        </video>
+      <video autoPlay muted loop id="myVideo">
+        <source src="/back2.mp4" type="video/mp4" />
+      </video>
     </div>
-  )
-}
+  );
+};
 
-export default main
+export default main;
