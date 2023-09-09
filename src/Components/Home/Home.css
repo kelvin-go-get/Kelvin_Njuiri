@@ -198,9 +198,25 @@
     height: 22px;
   }
   .home_title {
-    font-size: 45px;
-    margin-bottom: 2px;
+    font-size: 38px;
+    margin-bottom: 1px;
    }
+   .home_subtitle {
+    position: relative;
+    font-size: 26px;
+    padding-left: 3rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .home_subtitle::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #333;
+    left: 0;
+    top: 1rem;
+  }
    .home_description {
     max-width: initial;
     margin-bottom: 10px;
