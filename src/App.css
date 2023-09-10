@@ -46,10 +46,11 @@ img {
   padding: 6rem 0 2rem;
 }
 .section_title{
-  font-size: var(--h1-font-size);
+  font-size: 38px;
   color: var(--title-color);
 }
 .section_subtitle{
+  font-size: 20px;
   display: block;
   font-weight: var(--small-font-size);
   margin-bottom: 4rem;
@@ -87,9 +88,15 @@ img {
     height: 22px;
   }
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
+  body {
+    margin: 0 0 50px 0;
+  }
   .section {
   padding: 2rem 0 4rem;
+  }
+  .section_subtitle {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width:425px) {
