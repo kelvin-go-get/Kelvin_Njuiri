@@ -1,14 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 
 const Header = () => {
   /*TOGGLE MENU*/
-  const[Toggle, showMenu] = useState(false);
+  const [Toggle, showMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? "blur" : ""}`}>
       <nav className="nav container">
         <a href="index.html" className="nav_logo">
-        Kel<span>vin</span>
+          Kel<span>vin</span>
         </a>
         <div className={Toggle ? "nav_menu show-menu" : "nav_menu"}>
           <ul className="nav_list grid">
@@ -49,10 +67,13 @@ const Header = () => {
             </li>
           </ul>
 
-          <i class="uil uil-times nav_close" onClick={() => showMenu (!Toggle)}></i>
+          <i
+            class="uil uil-times nav_close"
+            onClick={() => showMenu(!Toggle)}
+          ></i>
         </div>
 
-        <div className="nav_toggle" onClick={() => showMenu (!Toggle)}>
+        <div className="nav_toggle" onClick={() => showMenu(!Toggle)}>
           <i class="uil uil-apps"></i>
         </div>
       </nav>
