@@ -26,6 +26,14 @@ const Social = () => {
       >
         <i class="uil uil-github"></i>
       </a>
+      
+      <a
+        href="https://medium.com/@knjuiri"
+        className="home_social-icon"
+        target="_blank"
+      >
+        <i class="uil uil-medium-m"></i>
+      </a>
     </div>
   );
 };
