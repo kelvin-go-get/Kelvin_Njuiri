@@ -3,19 +3,17 @@
     text-decoration: none;
     backdrop-filter: blur(10px);
     box-shadow:10px 4px 8px 6px rgba(0, 0, 0, 0.8);   
-    font-weight: bold;
+    font-weight: 500;
     padding: 10px 20px;
     border-radius: 30px;
     transition: .3s;
   }
   .button:hover{
-    color:#000;
-    font-weight: bolder;
+    color:#f9004d;
+    font-weight: bold;
     background-color: transparent;
-    border: 0.2px solid #333;
+    border: 1px solid #f9004d;
     cursor: pointer;
-    transform: scale(1);
-    transition: .2s;
   }
   /*.home_scroll-button:hover {
     color: #f9004d;
