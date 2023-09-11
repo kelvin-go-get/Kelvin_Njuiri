@@ -1,0 +1,148 @@
+.services_container {
+  grid-template-columns: repeat(3, 270px);
+  justify-content: center;
+  column-gap: 1.8rem;
+}
+.services_content {
+  position: relative;
+  box-shadow: 6px 8px rgba(0, 0, 0, 0.6);
+  padding: 6rem 0 2rem 2.5rem;
+}
+.services_icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.services_title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.services_button {
+  color: black;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+}
+.services_button:hover {
+  color: #f9004d;
+  border: 1px solid #f9004d;
+  transform: translateX(0.25rem);
+}
+.services_button:hover .services_button-icon {
+  transform: translateX(0.25rem);
+}
+.services_button-icon {
+  font-size: 1rem;
+  color: #f9004d;
+  transition: 0.3s;
+}
+.services_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.services_modal-content {
+  width: 500px;
+  position: relative;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.6);
+  background-color: white;
+  padding: 4rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+.services_modal-close {
+  color: #f9004d;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.services_modal-title,
+.services_modal-description {
+  text-align: center;
+}
+.services_modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.services_modal-description {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 3.5rem;
+  margin-bottom: 20px;
+}
+.services_modal-services {
+  row-gap: 0.75rem;
+}
+.services_modal-service {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.services_modal-icon {
+  color: #f9004d;
+  font-size: 1.1rem;
+}
+.services_modal-info {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+
+/*ACTIVE MODAL*/
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 992px) {
+  .services_container {
+    grid-template-columns: repeat(3, 218px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .services_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services_content {
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  }
+  .services_icon {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .services_modal-content {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
+  .services_modal-description {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .services_container {
+    grid-template-columns: max-content;
+  }
+  .services_content {
+    padding-right: 6rem;
+  }
+}
