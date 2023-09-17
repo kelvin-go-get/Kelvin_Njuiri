@@ -18,12 +18,12 @@ textarea {
   font-size: 18px;
 }
 body {
-  color: #000;
+  color: #333;
   /* background-image: url("../Assets/images/back2.jpg"); Adjust the path as needed */
 }
 
 h1, h2, h3{
-  color: #000;
+  color: #555;
   font-weight: 600;
 }
 ul{
