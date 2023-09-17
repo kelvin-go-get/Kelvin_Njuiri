@@ -17,11 +17,11 @@ textarea {
   font-family: var(--body-font);
   font-size: 18px;
 }
-body{
-  
+body {
   color: #000;
-  background: transparent;
+  /* background-image: url("../Assets/images/back2.jpg"); Adjust the path as needed */
 }
+
 h1, h2, h3{
   color: #000;
   font-weight: 600;
