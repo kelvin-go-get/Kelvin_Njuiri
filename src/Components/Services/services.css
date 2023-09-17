@@ -19,7 +19,7 @@
   font-weight: 600;
 }
 .services_button {
-  color: black;
+  color: #555;
   font-size: 18px;
   display: inline-flex;
   align-items: center;
@@ -84,7 +84,7 @@
   margin-bottom: 10px;
 }
 .services_modal-description {
-  color: #333;
+  color: #555;
   font-size: 20px;
   font-weight: 600;
   padding: 0 3.5rem;
@@ -105,7 +105,7 @@
 .services_modal-info {
   font-size: 18px;
   font-weight: 400;
-  color: #333;
+  color: #555;
 }
 
 /*ACTIVE MODAL*/
