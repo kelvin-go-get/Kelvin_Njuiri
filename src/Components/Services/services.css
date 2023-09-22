@@ -8,6 +8,7 @@
   column-gap: 1.8rem;
 }
 .services_content {
+  background-color: #eee;
   position: relative;
   box-shadow: 6px 8px rgba(0, 0, 0, 0.6);
   padding: 6rem 0 2rem 2.5rem;
@@ -24,6 +25,7 @@
 }
 .services_button {
   color: #555;
+  background-color: #eee;
   font-size: 18px;
   display: inline-flex;
   align-items: center;
