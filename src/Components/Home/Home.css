@@ -18,6 +18,9 @@
   /*.home_scroll-button:hover {
     color: #f9004d;
   }*/
+  .home {
+    background-color: #eee;
+  }
   .home_container{
     row-gap: 3rem;
   }

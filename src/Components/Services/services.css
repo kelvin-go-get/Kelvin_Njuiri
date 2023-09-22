@@ -1,3 +1,7 @@
+/* .services {
+  background-color: #eee;
+} */
+
 .services_container {
   grid-template-columns: repeat(3, 270px);
   justify-content: center;

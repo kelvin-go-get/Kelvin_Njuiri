@@ -1,5 +1,4 @@
 // import React from "react";
-// // Correct the import path
 // import "./main.css";
 
 // const main = () => {
