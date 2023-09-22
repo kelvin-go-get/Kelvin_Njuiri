@@ -66,7 +66,7 @@
   width: 500px;
   position: relative;
   box-shadow: 8px 8px rgba(0, 0, 0, 0.6);
-  background-color: white;
+  background-color: #eee;
   padding: 4rem 2.5rem 2.5rem;
   border-radius: 1.5rem;
 }
