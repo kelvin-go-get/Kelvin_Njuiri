@@ -1,7 +1,7 @@
 import React from "react";
 import "./skills.css";
 import Frontend from "./Frontend";
-import Backend from "./Backend";
+// import Backend from "./Backend";
 
 const skills = () => {
   return (
@@ -12,7 +12,7 @@ const skills = () => {
       </h4>
       <div className="skills_container container grid">
         <Frontend />
-        <Backend />
+        {/* <Backend /> */}
       </div>
     </section>
   );
