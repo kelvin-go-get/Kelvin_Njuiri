@@ -1,3 +1,7 @@
+/* .about {
+    background-color: #eee;
+} */
+
 .about_container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -18,6 +22,7 @@
 .about_box {
     box-shadow: 6px 8px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
+    background-color: #eee;
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
