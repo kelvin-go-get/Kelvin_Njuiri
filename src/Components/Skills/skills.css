@@ -1,12 +1,14 @@
 .skills {
   background-color: #eee;
+  height: 550px;
 }
 
-.skills_container {
+/* .skills_container {
   grid-template-columns: repeat(1, 350px);
   column-gap: 3rem;
   justify-content: center;
-}
+  background-color: #eee;
+} */
 .skills_content {
   box-shadow: 6px 8px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
@@ -43,10 +45,9 @@
   line-height: 18px;
 }
 @media screen and (max-width: 992px) {
-    .skills_container {
-        grid-template-columns: max-content;
-        row-gap: 2rem;
-    }
+  .skills_container {
+    grid-template-columns: 1fr;
+}
 }
 @media screen and (max-width: 425px) {
     .skills_container {

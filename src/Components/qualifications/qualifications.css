@@ -1,0 +1,16 @@
+.qualification {
+    background-color: #eee;
+}
+.qualification_container {
+    max-width: 768px;
+}
+.qualification_tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.qualification_button {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+}
