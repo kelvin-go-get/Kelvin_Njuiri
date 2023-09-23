@@ -94,7 +94,8 @@ const Services = () => {
           <div>
             <i className="uil uil-arrow services_icon"></i>
             <h3 className="services_title">
-              <span>Ui/Ux</span> <br /> Designer
+              User
+              <span> (Ux) </span> <br /> Experience
             </h3>
           </div>
 
@@ -117,7 +118,8 @@ const Services = () => {
               ></i>
 
               <h3 className="services_modal-title">
-                Ui/Ux <span>Designer</span>
+                User
+                <span> (Ux) </span> <br /> Experience
               </h3>
               <p className="services_modal-description">
                 <span>1 year</span> of experienced service, delivering
