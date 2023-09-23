@@ -56,7 +56,7 @@ const Qualifications = () => {
                 <span className="qualification_subtitle">ALX Africa</span>
 
                 <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>AUG 2023 - present
+                  <i className="uil uil-calendar-alt"></i>Aug 2023 - present
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ const Qualifications = () => {
                 <span className="qualification_subtitle">ALX Africa</span>
 
                 <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>AUG 2023 - present
+                  <i className="uil uil-calendar-alt"></i>Aug 2023 - present
                 </div>
               </div>
 
