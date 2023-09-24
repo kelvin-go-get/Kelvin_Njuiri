@@ -9,12 +9,13 @@
     border-radius: 30px;
     transition: .3s;
   }
-  .button:hover{
+  .button:hover {
     color:#f9004d;
     font-weight: bold;
     background-color: transparent;
     border: 1px solid #f9004d;
     cursor: pointer;
+
   }
   /*.home_scroll-button:hover {
     color: #f9004d;
