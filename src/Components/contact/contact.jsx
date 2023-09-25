@@ -1,7 +1,47 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import "./contact.css";
 
-const contact = () => {
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+    const nameInput = form.current.elements.name;
+    const emailInput = form.current.elements.email;
+    const projectInput = form.current.elements.project;
+  
+    if (nameInput.value && emailInput.value && projectInput.value) {
+      // Proceed with sending the email
+      emailjs
+        .sendForm(
+          "service_jqofro8",
+          "template_jaigfpz",
+          form.current,
+          "cEw1XdPaQH7MFQpvX"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Message sent and received successfully by Kelvin!😊");
+
+            setTimeout(() => {
+              alert("Thank you for contacting Kelvin!");
+            }, 1000);
+          },
+          (error) => {
+            console.log(error.text);
+            alert("Error sending message. Please try again.");
+          }
+        );
+    } else {
+      // Handle the case where one or more fields are empty
+      alert("Please fill in all the required fields!");
+    }
+  };
+  
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section_title">Get In Touch</h2>
@@ -68,7 +108,7 @@ const contact = () => {
             <span>Write Me</span> Your Project
           </h3>
 
-          <form className="contact_form">
+          <form ref={form} onSubmit={sendEmail} className="contact_form">
             <div className="contact_form-div">
               <label className="contact_form-tag">Name</label>
               <input
@@ -83,7 +123,7 @@ const contact = () => {
               <label className="contact_form-tag">Mail</label>
               <input
                 type="email"
-                name="Email"
+                name="email"
                 className="contact_form-input"
                 placeholder="Insert Your Email"
               />
@@ -127,4 +167,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
