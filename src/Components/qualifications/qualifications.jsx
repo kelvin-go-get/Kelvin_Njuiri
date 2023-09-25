@@ -51,7 +51,7 @@ const Qualifications = () => {
           >
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">Software Engeneering</h3>
+                <h3 className="qualification_title">Software Engineering</h3>
 
                 <span className="qualification_subtitle">ALX Africa</span>
 
@@ -96,7 +96,7 @@ const Qualifications = () => {
           >
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">Software Engeneering</h3>
+                <h3 className="qualification_title">Software Engineering</h3>
 
                 <span className="qualification_subtitle">ALX Africa</span>
 
