@@ -26,6 +26,10 @@ const Contact = () => {
             console.log(result.text);
             alert("Message sent and received successfully by Kelvin!😊");
 
+            nameInput.value = "";
+            emailInput.value = "";
+            projectInput.value = "";
+
             setTimeout(() => {
               alert("Thank you for contacting Kelvin!");
             }, 1000);
