@@ -43,6 +43,8 @@
   }
   .home_social-icon:hover {
     color: #f9004d;
+    font-size: larger;
+    transition: .3s;
   }
   .home_title {
     font-size: 58px;

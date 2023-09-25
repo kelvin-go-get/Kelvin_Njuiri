@@ -7,6 +7,7 @@ import Skills from './Components/Skills/skills';
 import Services from './Components/Services/services';
 import Qualifications from './Components/qualifications/qualifications';
 import Contact from './Components/contact/contact';
+import Footer from './Components/Footer/footer';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
     <Services/>
     <Qualifications/>
     <Contact/>
+    <Footer/>
     </main>
     
     </>
