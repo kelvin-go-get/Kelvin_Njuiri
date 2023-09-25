@@ -63,7 +63,7 @@ const Data = () => {
         world of software engineering excellence.
       </p>
 
-      <a href="#contact" className="button button--flex" target="_blank">
+      <a href="#contact" className="button button--flex">
         Say Hello
         <svg
           class="button__icon"
