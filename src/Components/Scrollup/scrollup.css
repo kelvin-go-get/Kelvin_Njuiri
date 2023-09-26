@@ -13,8 +13,11 @@
     font-size: 1.5rem;
     color: #333;
 }
-.scrollup_icon:hover {
+
+.scrollup:hover {
     border:1px solid  #f9004d;
+}
+.scrollup_icon:hover {
     color: #f9004d;
 }
 
