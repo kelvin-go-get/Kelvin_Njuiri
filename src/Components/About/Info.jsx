@@ -15,7 +15,7 @@ const Info = () => {
         <i class="uil uil-briefcase-alt about_icon"></i>
         <h3 className="about_title">Completed</h3>
         <h4 className="about_subtitle">
-          <span>15 +</span> Projects
+          <span>20 +</span> Projects
         </h4>
       </div>
 
