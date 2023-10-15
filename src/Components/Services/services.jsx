@@ -45,7 +45,7 @@ const Services = () => {
                 Website <span>Responsiveness</span>
               </h3>
               <p className="services_modal-description">
-                <span>1 year</span> of experienced web service, delivering
+                <span>2 years</span> of experienced web service, delivering
                 exceptional quality to clients and companies.
               </p>
 
@@ -122,7 +122,7 @@ const Services = () => {
                 <span> (Ux) </span> <br /> Experience
               </h3>
               <p className="services_modal-description">
-                <span>1 year</span> of experienced service, delivering
+                <span>2 years</span> of experienced service, delivering
                 exceptional quality to clients and companies.
               </p>
 
@@ -197,7 +197,7 @@ const Services = () => {
                 Frontend <span>Developer</span>
               </h3>
               <p className="services_modal-description">
-                <span>1 year</span> of experienced service, delivering
+                <span>2 years</span> of experienced service, delivering
                 exceptional quality to clients and companies.
               </p>
 
