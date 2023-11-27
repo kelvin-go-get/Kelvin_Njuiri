@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import Preview1 from "../../Assets/images/preview1.png";
-import Preview2 from "../../Assets/images/preview2.png";
+import Preview2 from "../../Assets/images/fudo.png";
 import Preview from "../../Assets/images/preview3.png";
 import { projectsData } from "../../Data/projectsData";
 
@@ -15,27 +15,30 @@ const Projects = () => {
 
       <div className="projects-container">
         <div className="project">
-          <img src={Preview1} alt="" />
-          <span className="project-heading">Fit Hub</span>
+          <img src={Preview2} alt="" />
+          <span className="project-heading">FUDO</span>
           <p className="project-details">
-            The FitHub Gym React Project is a dynamic web application designed
-            to streamline gym management and enhance user engagement.
+            Next.js and React-powered pizza delivery platform integrated with
+            Sanity database. Aiming to revolutionize pizza ordering with a
+            powerful frontend and scalable database.
           </p>
           <div className="project-tech">
             <i class="bx bxl-react">React</i>
-            <i class="bx bxl-nodejs">Node.js</i>
+            <i class="bx bxl-nodejs">Next.js</i>
+            <i class="bx bxl-sanity">sanity</i>
+            <i class="bx bxl-vercel">Vercel</i>
           </div>
 
           <div className="project-buttons">
             <a
-              href="https://fit-hub-seven.vercel.app/"
+              href="https://fudooibsip.vercel.app/"
               className="button button--flex"
               target="_blank"
             >
               View
             </a>
             <a
-              href="https://github.com/kelvin-go-get/FitHub"
+              href="https://github.com/kelvin-go-get/OIBSIP"
               className="button button--flex"
               target="_blank"
             >
@@ -57,6 +60,8 @@ const Projects = () => {
             <i class="bx bx-badge-check">Express.js</i>
             <i class="bx bxl-react">React</i>
             <i class="bx bxl-nodejs">Node.js</i>
+            <i class="bx bxl-vercel">Vercel</i>
+
           </div>
 
           <div className="project-buttons">
@@ -78,30 +83,29 @@ const Projects = () => {
         </div>
 
         <div className="project">
-          <img src={Preview2} alt="" />
-          <span className="project-heading">Spend Smart</span>
+          <img src={Preview1} alt="" />
+          <span className="project-heading">Fit Hub</span>
           <p className="project-details">
-            Spend Smart is a personal expense tracking project designed to
-            empower users with the ability to monitor and manage their finances
-            efficiently.
+            The FitHub Gym React Project is a dynamic web application designed
+            to streamline gym management and enhance user engagement.
           </p>
           <div className="project-tech">
-            {" "}
-            <i class="bx bxl-html5">HTML</i>
-            <i class="bx bxl-css3">Css</i>
-            <i class="bx bxl-javascript">Vanilla.js</i>
+            <i class="bx bxl-react">React</i>
+            <i class="bx bxl-nodejs">Node.js</i>
+            <i class="bx bxl-vercel">Vercel</i>
+
           </div>
 
           <div className="project-buttons">
             <a
-              href="https://spend-smart-wine.vercel.app/"
+              href="https://fit-hub-seven.vercel.app/"
               className="button button--flex"
               target="_blank"
             >
               View
             </a>
             <a
-              href="https://github.com/kelvin-go-get/spend_smart"
+              href="https://github.com/kelvin-go-get/FitHub"
               className="button button--flex"
               target="_blank"
             >
