@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 import AboutImg from "../../Assets/images/BID_0015.JPG";
 import Resume from "../../Assets/KELVIN-NJUIRI-RESUME.pdf";
 import Info from "./Info";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const about = () => {
+const About = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 2000, 
+      easing: "ease-in-out",
+      
+    });
+
+   
+  }, []);
+
   return (
-    <section className="about section" id="about">
+    <section data-aos="zoom-in-up" className="about section" id="about">
       <h2 className="section_title">
         About <span>Me</span>
       </h2>
@@ -58,4 +72,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
