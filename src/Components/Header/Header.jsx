@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
   /*TOGGLE MENU*/
@@ -21,10 +23,21 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 2000, 
+      easing: "ease-in-out",
+      once: false,
+    });
+
+   
+  }, []);
 
   return (
     <header className={`header ${isScrolled ? "blur" : ""}`}>
-      <nav className="nav container">
+      <nav data-aos="fade-right" className="nav container">
         <a href="index.html" className="nav_logo">
           Kel<span>vin</span>
         </a>

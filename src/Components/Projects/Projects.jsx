@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import Preview1 from "../../Assets/images/preview1.png";
 import Preview2 from "../../Assets/images/fudo.png";
 import Preview from "../../Assets/images/preview3.png";
 import { projectsData } from "../../Data/projectsData";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 2000,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <section className="projects section" id="projects">
-      <h2 className="section_title">Projects</h2>
-      <h4 className="section_subtitle">
+      <h2 data-aos="fade-down" className="section_title">
+        Projects
+      </h2>
+      <h4 data-aos="fade-down" className="section_subtitle">
         What I Have<span> Done</span>
       </h4>
 
       <div className="projects-container">
-        <div className="project">
+        <div data-aos="flip-right" className="project">
           <img src={Preview2} alt="" />
           <span className="project-heading">FUDO</span>
           <p className="project-details">
@@ -47,7 +59,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="project">
+        <div data-aos="flip-right" className="project">
           <img src={Preview} alt="" />
           <span className="project-heading">Avalon Acres</span>
           <p className="project-details">
@@ -61,7 +73,6 @@ const Projects = () => {
             <i class="bx bxl-react">React</i>
             <i class="bx bxl-nodejs">Node.js</i>
             <i class="bx bxl-vercel">Vercel</i>
-
           </div>
 
           <div className="project-buttons">
@@ -82,7 +93,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="project">
+        <div data-aos="flip-right" className="project">
           <img src={Preview1} alt="" />
           <span className="project-heading">Fit Hub</span>
           <p className="project-details">
@@ -93,7 +104,6 @@ const Projects = () => {
             <i class="bx bxl-react">React</i>
             <i class="bx bxl-nodejs">Node.js</i>
             <i class="bx bxl-vercel">Vercel</i>
-
           </div>
 
           <div className="project-buttons">

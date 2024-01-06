@@ -1,20 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./services.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  
   const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 2000, 
+      easing: "ease-in-out",
+      
+    });
+
+   
+  }, []);
   return (
     <section className="services section" id="services">
-      <h2 className="section_title">Services</h2>
-      <h4 className="section_subtitle">
+      <h2 data-aos="fade-down" className="section_title">Services</h2>
+      <h4 data-aos="fade-down" className="section_subtitle">
         What I<span> Offer</span>
       </h4>
       <div className="services_container container grid">
-        <div className="services_content">
+        <div data-aos="flip-down" className="services_content">
           <div>
             <i className="uil uil-web-grid services_icon"></i>
             <h3 className="services_title">
@@ -90,7 +104,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="services_content">
+        <div data-aos="flip-down" className="services_content">
           <div>
             <i className="uil uil-arrow services_icon"></i>
             <h3 className="services_title">
@@ -167,7 +181,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="services_content">
+        <div data-aos="flip-down" className="services_content">
           <div>
             <i className="uil uil-edit services_icon"></i>
             <h3 className="services_title">

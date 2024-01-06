@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./footer.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const footer = () => {
+const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 2000, 
+      easing: "ease-in-out",
+      
+    });
+
+   
+  }, []);
   return (
    <footer className='footer'>
-    <div className="footer_container container">
+    <div data-aos="fade-down" className="footer_container container">
         <h1 className="footer_title">Kelvin</h1>
         <ul className="footer_list">
             <li>
@@ -61,4 +74,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer

@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./qualifications.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Qualifications = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -7,16 +9,28 @@ const Qualifications = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 2000,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <section className="qualification section" id="qualification">
-      <h2 className="section_title">Qualifications</h2>
-      <h4 className="section_subtitle">
+      <h2 data-aos="fade-down" className="section_title">
+        Qualifications
+      </h2>
+      <h4 data-aos="fade-down" className="section_subtitle">
         My<span> Personal</span> Journey
       </h4>
 
       <div className="qualification_container container">
         <div className="qualification_tabs">
           <div
+            data-aos="zoom-in-right"
             className={
               toggleState === 1
                 ? "qualification_button qualification_active button--flex"
@@ -29,6 +43,7 @@ const Qualifications = () => {
           </div>
 
           <div
+            data-aos="zoom-in-left"
             className={
               toggleState === 2
                 ? "qualification_button qualification_active button--flex"
@@ -49,7 +64,7 @@ const Qualifications = () => {
                 : "qualification_content"
             }
           >
-            <div className="qualification_data">
+            <div data-aos="zoom-in-left" className="qualification_data">
               <div>
                 <h3 className="qualification_title">Software Engineering</h3>
 
@@ -60,17 +75,17 @@ const Qualifications = () => {
                 </div>
               </div>
 
-              <div>
+              <div data-aos="zoom-in-up">
                 <span className="qualification_rounder"></span>
 
                 <span className="qualification_line"></span>
               </div>
             </div>
 
-            <div className="qualification_data">
+            <div data-aos="zoom-in-left" className="qualification_data">
               <div></div>
 
-              <div>
+              <div data-aos="zoom-in-up">
                 <span className="qualification_rounder"></span>
 
                 <span className="qualification_line"></span>
@@ -95,7 +110,7 @@ const Qualifications = () => {
             }
           >
             <div className="qualification_data">
-              <div>
+              <div data-aos="zoom-in-right">
                 <h3 className="qualification_title">Software Engineering</h3>
 
                 <span className="qualification_subtitle">ALX Africa</span>
@@ -105,7 +120,7 @@ const Qualifications = () => {
                 </div>
               </div>
 
-              <div>
+              <div data-aos="zoom-in-up">
                 <span className="qualification_rounder"></span>
 
                 <span className="qualification_line"></span>
@@ -115,16 +130,14 @@ const Qualifications = () => {
             <div className="qualification_data">
               <div></div>
 
-              <div>
+              <div data-aos="zoom-in-up">
                 <span className="qualification_rounder"></span>
 
                 <span className="qualification_line"></span>
               </div>
 
-              <div>
-                <h3 className="qualification_title">
-                  Volunteer Front-End Engineer
-                </h3>
+              <div data-aos="zoom-in-right">
+                <h3 className="qualification_title">Front-End Engineer</h3>
 
                 <span className="qualification_subtitle">
                   iHealth and Wellness Foundation
@@ -137,7 +150,7 @@ const Qualifications = () => {
             </div>
 
             <div className="qualification_data">
-              <div>
+              <div data-aos="zoom-in-right">
                 <h3 className="qualification_title">Junior Web Developer</h3>
 
                 <span className="qualification_subtitle">100Devs</span>
@@ -147,7 +160,7 @@ const Qualifications = () => {
                 </div>
               </div>
 
-              <div>
+              <div data-aos="zoom-in-up">
                 <span className="qualification_rounder"></span>
 
                 <span className="qualification_line"></span>

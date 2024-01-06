@@ -1,8 +1,21 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import "./contact.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 2000, 
+      easing: "ease-in-out",
+      
+    });
+
+   
+  }, []);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,7 +39,7 @@ const Contact = () => {
             console.log(result.text);
             alert("Message sent and received successfully by Kelvin!😊");
 
-            nameInput.value = "";
+            nameInput.  value = "";
             emailInput.value = "";
             projectInput.value = "";
 
@@ -48,19 +61,19 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section_title">Get In Touch</h2>
-      <h3 className="section_subtitle">
+      <h2 data-aos="fade-down" className="section_title">Get In Touch</h2>
+      <h3 data-aos="fade-down" className="section_subtitle">
         <span>Contact</span> Me
       </h3>
 
       <div className="contact_container container grid">
-        <div className="contact_content">
-          <h3 className="contact_title">
+        <div  className="contact_content">
+          <h3 data-aos="fade-up-right" className="contact_title">
             <span>Talk</span> To Me
           </h3>
 
-          <div className="contact_info">
-            <div className="contact_card">
+          <div  className="contact_info">
+            <div data-aos="fade-up-right" className="contact_card">
               <i className="bx bx-mail-send contact_card-icon"></i>
               <h3 className="contact_card-title">Email</h3>
               <h4 className="contact_card-data">knjuiri@gmail.com</h4>
@@ -75,7 +88,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="contact_card">
+            <div data-aos="fade-up-right" className="contact_card">
               <i className="bx bxl-whatsapp contact_card-icon"></i>
               <h3 className="contact_card-title">Whatsapp</h3>
               <h4 className="contact_card-data">+254 743109905</h4>
@@ -90,7 +103,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="contact_card">
+            <div data-aos="fade-up-right" className="contact_card">
               <i className="bx bxl-linkedin contact_card-icon"></i>
               <h3 className="contact_card-title">Linkedin</h3>
               <h4 className="contact_card-data">Kelvin Njuiri</h4>
@@ -107,13 +120,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact_content">
-          <h3 className="contact_title">
+        <div  className="contact_content">
+          <h3 data-aos="fade-up-left" className="contact_title">
             <span>Write Me</span> Your Project
           </h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact_form">
-            <div className="contact_form-div">
+            <div data-aos="fade-up-left" className="contact_form-div">
               <label className="contact_form-tag">Name</label>
               <input
                 type="text"
@@ -123,7 +136,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="contact_form-div">
+            <div data-aos="fade-up-left" className="contact_form-div">
               <label className="contact_form-tag">Mail</label>
               <input
                 type="email"
@@ -133,7 +146,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="contact_form-div contact_form-area">
+            <div data-aos="fade-up-left" className="contact_form-div contact_form-area">
               <label className="contact_form-tag">Project</label>
               <textarea
                 name="project"
@@ -144,7 +157,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="button button--flex" target="_blank">
+            <button data-aos="fade-up-left" className="button button--flex" target="_blank">
               Send Message
               <svg
                 class="button__icon"
