@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <header className={`header ${isScrolled ? "blur" : ""}`}>
-      <nav data-aos="fade-right" className="nav container">
+      <nav  className="nav container">
         <a href="index.html" className="nav_logo">
           Kel<span>vin</span>
         </a>

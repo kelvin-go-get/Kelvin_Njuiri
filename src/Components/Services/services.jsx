@@ -23,12 +23,12 @@ const Services = () => {
   }, []);
   return (
     <section className="services section" id="services">
-      <h2 data-aos="fade-down" className="section_title">Services</h2>
-      <h4 data-aos="fade-down" className="section_subtitle">
+      <h2 data-aos="zoom-in-up" className="section_title">Services</h2>
+      <h4 data-aos="zoom-in-up" className="section_subtitle">
         What I<span> Offer</span>
       </h4>
       <div className="services_container container grid">
-        <div data-aos="flip-down" className="services_content">
+        <div data-aos="flip-up" className="services_content">
           <div>
             <i className="uil uil-web-grid services_icon"></i>
             <h3 className="services_title">
@@ -104,7 +104,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div data-aos="flip-down" className="services_content">
+        <div data-aos="flip-up" className="services_content">
           <div>
             <i className="uil uil-arrow services_icon"></i>
             <h3 className="services_title">
@@ -181,7 +181,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div data-aos="flip-down" className="services_content">
+        <div data-aos="flip-up" className="services_content">
           <div>
             <i className="uil uil-edit services_icon"></i>
             <h3 className="services_title">

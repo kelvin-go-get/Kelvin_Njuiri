@@ -16,7 +16,7 @@ const Data = () => {
   }, []);
 
   return (
-    <div data-aos="fade-down" className="home_data">
+    <div data-aos="zoom-in-up" className="home_data">
       <h1 className="home_title">
         Kelvin <span>Njuiri</span>
         <svg

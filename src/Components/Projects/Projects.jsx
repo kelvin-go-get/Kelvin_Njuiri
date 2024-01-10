@@ -18,15 +18,15 @@ const Projects = () => {
   }, []);
   return (
     <section className="projects section" id="projects">
-      <h2 data-aos="fade-down" className="section_title">
+      <h2 data-aos="zoom-in-up" className="section_title">
         Projects
       </h2>
-      <h4 data-aos="fade-down" className="section_subtitle">
+      <h4 data-aos="zoom-in-up" className="section_subtitle">
         What I Have<span> Done</span>
       </h4>
 
       <div className="projects-container">
-        <div data-aos="flip-right" className="project">
+        <div data-aos="flip-up" className="project">
           <img src={Preview2} alt="" />
           <span className="project-heading">FUDO</span>
           <p className="project-details">
@@ -59,7 +59,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div data-aos="flip-right" className="project">
+        <div data-aos="flip-down" className="project">
           <img src={Preview} alt="" />
           <span className="project-heading">Avalon Acres</span>
           <p className="project-details">
@@ -93,7 +93,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div data-aos="flip-right" className="project">
+        <div data-aos="flip-down" className="project">
           <img src={Preview1} alt="" />
           <span className="project-heading">Fit Hub</span>
           <p className="project-details">

@@ -25,7 +25,7 @@ const Home = () => {
         <div className="home_content grid">
           <Social />
 
-          <div data-aos="fade-left" className="home_image"></div>
+          <div data-aos="zoom-in-up" className="home_image"></div>
 
           <Data />
         </div>

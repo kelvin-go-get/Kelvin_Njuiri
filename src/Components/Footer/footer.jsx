@@ -17,7 +17,7 @@ const Footer = () => {
   }, []);
   return (
    <footer className='footer'>
-    <div data-aos="fade-down" className="footer_container container">
+    <div data-aos="zoom-in-up" className="footer_container container">
         <h1 className="footer_title">Kelvin</h1>
         <ul className="footer_list">
             <li>
