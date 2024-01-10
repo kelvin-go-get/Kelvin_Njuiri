@@ -21,8 +21,8 @@ const Skills = () => {
 
   return (
     <section className="skills section" id="skills">
-      <h2 data-aos="fade-down" className="section_title">Skills</h2>
-      <h4 data-aos="fade-down" className="section_subtitle">
+      <h2 data-aos="zoom-in-up" className="section_title">Skills</h2>
+      <h4 data-aos="zoom-in-up" className="section_subtitle">
         My <span>Technical </span>Level
       </h4>
       <div className="skills_container container grid">

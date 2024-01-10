@@ -16,7 +16,7 @@ const Backend = () => {
    
   }, []);
   return (
-    <div data-aos="fade-up-left" className="skills_content">
+    <div data-aos="zoom-in-up" className="skills_content">
       <h3 className="skills_title">
         Backend <span>Developer</span>
       </h3>

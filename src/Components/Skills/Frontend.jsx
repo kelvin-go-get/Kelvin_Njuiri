@@ -18,7 +18,7 @@ const Frontend = () => {
    
   }, []);
   return (
-    <div data-aos="fade-up-right" className="skills_content">
+    <div data-aos="zoom-in-up" className="skills_content">
       <h3 className="skills_title">
         Frontend <span>Developer</span>
       </h3>

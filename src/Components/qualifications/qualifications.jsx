@@ -20,17 +20,17 @@ const Qualifications = () => {
   }, []);
   return (
     <section className="qualification section" id="qualification">
-      <h2 data-aos="fade-down" className="section_title">
+      <h2 data-aos="zoom-in-up" className="section_title">
         Qualifications
       </h2>
-      <h4 data-aos="fade-down" className="section_subtitle">
+      <h4 data-aos="zoom-in-up" className="section_subtitle">
         My<span> Personal</span> Journey
       </h4>
 
       <div className="qualification_container container">
         <div className="qualification_tabs">
           <div
-            data-aos="zoom-in-right"
+            data-aos="zoom-in-up"
             className={
               toggleState === 1
                 ? "qualification_button qualification_active button--flex"
@@ -43,7 +43,7 @@ const Qualifications = () => {
           </div>
 
           <div
-            data-aos="zoom-in-left"
+            data-aos="zoom-in-up"
             className={
               toggleState === 2
                 ? "qualification_button qualification_active button--flex"
@@ -82,7 +82,7 @@ const Qualifications = () => {
               </div>
             </div>
 
-            <div data-aos="zoom-in-left" className="qualification_data">
+            <div data-aos="zoom-in-up" className="qualification_data">
               <div></div>
 
               <div data-aos="zoom-in-up">
@@ -110,7 +110,7 @@ const Qualifications = () => {
             }
           >
             <div className="qualification_data">
-              <div data-aos="zoom-in-right">
+              <div data-aos="zoom-in-up">
                 <h3 className="qualification_title">Software Engineering</h3>
 
                 <span className="qualification_subtitle">ALX Africa</span>
@@ -136,7 +136,7 @@ const Qualifications = () => {
                 <span className="qualification_line"></span>
               </div>
 
-              <div data-aos="zoom-in-right">
+              <div data-aos="zoom-in-up">
                 <h3 className="qualification_title">Front-End Engineer</h3>
 
                 <span className="qualification_subtitle">
@@ -150,7 +150,7 @@ const Qualifications = () => {
             </div>
 
             <div className="qualification_data">
-              <div data-aos="zoom-in-right">
+              <div data-aos="zoom-in-up">
                 <h3 className="qualification_title">Junior Web Developer</h3>
 
                 <span className="qualification_subtitle">100Devs</span>

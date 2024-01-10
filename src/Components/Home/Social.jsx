@@ -13,7 +13,7 @@ const Social = () => {
     });
   }, []);
   return (
-    <div data-aos="fade-right" className="home_social">
+    <div data-aos="zoom-in-up" className="home_social">
       <a
         href="https://www.linkedin.com/in/kelvin-njuiri/"
         className="home_social-icon"
