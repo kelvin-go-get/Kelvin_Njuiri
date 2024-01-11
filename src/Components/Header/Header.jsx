@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const Header = () => {
   /*TOGGLE MENU*/
@@ -23,21 +22,18 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000, 
-      easing: "ease-in-out",
-      once: false,
-    });
-
-   
-  }, []);
 
   return (
     <header className={`header ${isScrolled ? "blur" : ""}`}>
-      <nav  className="nav container">
+      <motion.nav
+        initial={{ y: "10rem", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 3,
+          type: "spring",
+        }}
+        className="nav container"
+      >
         <a href="index.html" className="nav_logo">
           Kel<span>vin</span>
         </a>
@@ -89,7 +85,7 @@ const Header = () => {
         <div className="nav_toggle" onClick={() => showMenu(!Toggle)}>
           <i class="uil uil-apps"></i>
         </div>
-      </nav>
+      </motion.nav>
     </header>
   );
 };

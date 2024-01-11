@@ -1,22 +1,17 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const Data = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000, 
-      easing: "ease-in-out",
-      
-    });
-
-   
-  }, []);
-
   return (
-    <div data-aos="zoom-in-up" className="home_data">
+    <motion.div
+      initial={{ y: "10rem", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 3,
+        type: "spring",
+      }}
+      className="home_data"
+    >
       <h1 className="home_title">
         Kelvin <span>Njuiri</span>
         <svg
@@ -97,7 +92,7 @@ const Data = () => {
           ></path>
         </svg>
       </a>
-    </div>
+    </motion.div>
   );
 };
 

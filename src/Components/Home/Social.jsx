@@ -1,19 +1,17 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const Social = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000,
-      easing: "ease-in-out",
-      once: false,
-    });
-  }, []);
   return (
-    <div data-aos="zoom-in-up" className="home_social">
+    <motion.div
+      initial={{ y: "10rem", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 3,
+        type: "spring",
+      }}
+      className="home_social"
+    >
       <a
         href="https://www.linkedin.com/in/kelvin-njuiri/"
         className="home_social-icon"
@@ -45,7 +43,7 @@ const Social = () => {
       >
         <i class="uil uil-medium-m"></i>
       </a>
-    </div>
+    </motion.div>
   );
 };
 

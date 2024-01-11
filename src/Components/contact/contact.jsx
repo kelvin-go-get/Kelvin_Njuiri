@@ -1,30 +1,18 @@
 import React, { useRef, useEffect } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import "./contact.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const Contact = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000, 
-      easing: "ease-in-out",
-      
-    });
-
-   
-  }, []);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-  
+
     const nameInput = form.current.elements.name;
     const emailInput = form.current.elements.email;
     const projectInput = form.current.elements.project;
-  
+
     if (nameInput.value && emailInput.value && projectInput.value) {
       // Proceed with sending the email
       emailjs
@@ -39,7 +27,7 @@ const Contact = () => {
             console.log(result.text);
             alert("Message sent and received successfully by Kelvin!😊");
 
-            nameInput.  value = "";
+            nameInput.value = "";
             emailInput.value = "";
             projectInput.value = "";
 
@@ -57,23 +45,31 @@ const Contact = () => {
       alert("Please fill in all the required fields!");
     }
   };
-  
 
   return (
-    <section className="contact section" id="contact">
-      <h2 data-aos="zoom-in-up" className="section_title">Get In Touch</h2>
-      <h3 data-aos="zoom-in-up" className="section_subtitle">
+    <motion.section
+      initial={{ y: "10rem", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 3,
+        type: "spring",
+      }}
+      className="contact section"
+      id="contact"
+    >
+      <h2 className="section_title">Get In Touch</h2>
+      <h3 className="section_subtitle">
         <span>Contact</span> Me
       </h3>
 
       <div className="contact_container container grid">
-        <div  className="contact_content">
-          <h3 data-aos="zoom-in-up" className="contact_title">
+        <div className="contact_content">
+          <h3 className="contact_title">
             <span>Talk</span> To Me
           </h3>
 
-          <div  className="contact_info">
-            <div data-aos="zoom-in-up" className="contact_card">
+          <div className="contact_info">
+            <div className="contact_card">
               <i className="bx bx-mail-send contact_card-icon"></i>
               <h3 className="contact_card-title">Email</h3>
               <h4 className="contact_card-data">knjuiri@gmail.com</h4>
@@ -88,7 +84,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div data-aos="zoom-in-up" className="contact_card">
+            <div className="contact_card">
               <i className="bx bxl-whatsapp contact_card-icon"></i>
               <h3 className="contact_card-title">Whatsapp</h3>
               <h4 className="contact_card-data">+254 743109905</h4>
@@ -103,7 +99,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div data-aos="zoom-in-up" className="contact_card">
+            <div className="contact_card">
               <i className="bx bxl-linkedin contact_card-icon"></i>
               <h3 className="contact_card-title">Linkedin</h3>
               <h4 className="contact_card-data">Kelvin Njuiri</h4>
@@ -120,13 +116,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <div  className="contact_content">
-          <h3 data-aos="zoom-in-up" className="contact_title">
+        <div className="contact_content">
+          <h3 className="contact_title">
             <span>Write Me</span> Your Project
           </h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact_form">
-            <div data-aos="zoom-in-up" className="contact_form-div">
+            <div className="contact_form-div">
               <label className="contact_form-tag">Name</label>
               <input
                 type="text"
@@ -136,7 +132,7 @@ const Contact = () => {
               />
             </div>
 
-            <div data-aos="zoom-in-up" className="contact_form-div">
+            <div className="contact_form-div">
               <label className="contact_form-tag">Mail</label>
               <input
                 type="email"
@@ -146,7 +142,7 @@ const Contact = () => {
               />
             </div>
 
-            <div data-aos="zoom-in-up" className="contact_form-div contact_form-area">
+            <div className="contact_form-div contact_form-area">
               <label className="contact_form-tag">Project</label>
               <textarea
                 name="project"
@@ -157,7 +153,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button data-aos="zoom-in-up" className="button button--flex" target="_blank">
+            <button className="button button--flex" target="_blank">
               Send Message
               <svg
                 class="button__icon"
@@ -180,7 +176,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

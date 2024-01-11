@@ -3,41 +3,60 @@ import "./about.css";
 import AboutImg from "../../Assets/images/BID_0015.JPG";
 import Resume from "../../Assets/KELVIN-NJUIRI-RESUME.pdf";
 import Info from "./Info";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000, 
-      easing: "ease-in-out",
-      
-    });
-
-   
-  }, []);
-
   return (
-    <section data-aos="zoom-in-up" className="about section" id="about">
-      <h2 className="section_title">
+    <section className="about section" id="about">
+      <motion.h2
+        initial={{ y: "10rem", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 3,
+          type: "spring",
+        }}
+        className="section_title"
+      >
         About <span>Me</span>
-      </h2>
-      <h4 className="section_subtitle">
+      </motion.h2>
+      <motion.h4
+        initial={{ y: "10rem", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 3,
+          type: "spring",
+        }}
+        className="section_subtitle"
+      >
         My <span>Introduction</span>
-      </h4>
-      <div className="about_container container grid">
+      </motion.h4>
+      <motion.div
+        initial={{ y: "10rem", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 3,
+          type: "spring",
+        }}
+        className="about_container container grid"
+      >
         <img src={AboutImg} className="about_img" alt="" />
         <div className="about_data">
           <Info />
-          <p className="about_description">
+          <motion.p
+            initial={{ y: "10rem", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 3,
+              type: "spring",
+            }}
+            className="about_description"
+          >
             I'm not just a coder; I'm a digital architect crafting the future.
             With a passion for pixels and an eye for elegance, I turn complex
             concepts into intuitive interfaces. I thrive in the ever-evolving
             tech landscape, bringing fresh ideas to life with every line of
             code.
-          </p>
+          </motion.p>
           <a download="" href={Resume} className="button button--flex">
             Download CV
             <svg
@@ -67,7 +86,7 @@ const About = () => {
             </svg>
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

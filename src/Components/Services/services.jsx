@@ -1,34 +1,42 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import "./services.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Services = () => {
-  
   const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000, 
-      easing: "ease-in-out",
-      
-    });
+  const [isFlipped, setIsFlipped] = useState(false);
 
-   
-  }, []);
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
-    <section className="services section" id="services">
-      <h2 data-aos="zoom-in-up" className="section_title">Services</h2>
-      <h4 data-aos="zoom-in-up" className="section_subtitle">
+    <motion.section
+      initial={{ y: "10rem", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 3,
+        type: "spring",
+      }}
+      className="services section"
+      id="services"
+    >
+      <h2 className="section_title">Services</h2>
+      <h4 className="section_subtitle">
         What I<span> Offer</span>
       </h4>
       <div className="services_container container grid">
-        <div data-aos="flip-up" className="services_content">
+        <motion.div
+          className={`services_content ${isFlipped ? "flipped" : ""}`}
+          onClick={handleCardClick}
+          initial={{ transform: "rotateX(50deg)" }}
+          animate={{ transform: `rotateX(${isFlipped ? 360 : 0}deg)` }}
+          transition={{ duration: 3, ease: "easeInOut" }}
+        >
           <div>
             <i className="uil uil-web-grid services_icon"></i>
             <h3 className="services_title">
@@ -102,9 +110,15 @@ const Services = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div data-aos="flip-up" className="services_content">
+        <motion.div
+          className={`services_content ${isFlipped ? "flipped" : ""}`}
+          onClick={handleCardClick}
+          initial={{ transform: "rotateX(50deg)" }}
+          animate={{ transform: `rotateX(${isFlipped ? 360 : 0}deg)` }}
+          transition={{ duration: 3, ease: "easeInOut" }}
+        >
           <div>
             <i className="uil uil-arrow services_icon"></i>
             <h3 className="services_title">
@@ -179,9 +193,15 @@ const Services = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div data-aos="flip-up" className="services_content">
+        <motion.div
+          className={`services_content ${isFlipped ? "flipped" : ""}`}
+          onClick={handleCardClick}
+          initial={{ transform: "rotateX(50deg)" }}
+          animate={{ transform: `rotateX(${isFlipped ? 360 : 0}deg)` }}
+          transition={{ duration: 3, ease: "easeInOut" }}
+        >
           <div>
             <i className="uil uil-edit services_icon"></i>
             <h3 className="services_title">
@@ -254,9 +274,9 @@ const Services = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

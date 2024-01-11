@@ -1,32 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./Projects.css";
 import Preview1 from "../../Assets/images/preview1.png";
 import Preview2 from "../../Assets/images/fudo.png";
 import Preview from "../../Assets/images/preview3.png";
-import { projectsData } from "../../Data/projectsData";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000,
-      easing: "ease-in-out",
-    });
-  }, []);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
-    <section className="projects section" id="projects">
-      <h2 data-aos="zoom-in-up" className="section_title">
-        Projects
-      </h2>
-      <h4 data-aos="zoom-in-up" className="section_subtitle">
+    <motion.section
+      initial={{ y: "10rem", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 3,
+        type: "spring",
+      }}
+      className="projects section"
+      id="projects"
+    >
+      <h2 className="section_title">Projects</h2>
+      <h4 className="section_subtitle">
         What I Have<span> Done</span>
       </h4>
 
       <div className="projects-container">
-        <div data-aos="flip-up" className="project">
+        <motion.div
+          className={`project ${isFlipped ? "flipped" : ""}`}
+          onClick={handleCardClick}
+          initial={{ transform: "rotateY(50deg)" }}
+          animate={{ transform: `rotateY(${isFlipped ? 360 : 0}deg)` }}
+          transition={{ duration: 3, ease: "easeInOut" }}
+        >
           <img src={Preview2} alt="" />
           <span className="project-heading">FUDO</span>
           <p className="project-details">
@@ -35,10 +44,10 @@ const Projects = () => {
             powerful frontend and scalable database.
           </p>
           <div className="project-tech">
-            <i class="bx bxl-react">React</i>
-            <i class="bx bxl-nodejs">Next.js</i>
-            <i class="bx bxl-sanity">sanity</i>
-            <i class="bx bxl-vercel">Vercel</i>
+            <i className="bx bxl-react">React</i>
+            <i className="bx bxl-nodejs">Next.js</i>
+            <i className="bx bxl-sanity">sanity</i>
+            <i className="bx bxl-vercel">Vercel</i>
           </div>
 
           <div className="project-buttons">
@@ -46,6 +55,7 @@ const Projects = () => {
               href="https://fudooibsip.vercel.app/"
               className="button button--flex"
               target="_blank"
+              rel="noopener noreferrer"
             >
               View
             </a>
@@ -53,13 +63,20 @@ const Projects = () => {
               href="https://github.com/kelvin-go-get/OIBSIP"
               className="button button--flex"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Code
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div data-aos="flip-down" className="project">
+        <motion.div
+          className={`project ${isFlipped ? "flipped" : ""}`}
+          onClick={handleCardClick}
+          initial={{ transform: "rotateY(50deg)" }}
+          animate={{ transform: `rotateY(${isFlipped ? 360 : 0}deg)` }}
+          transition={{ duration: 3, ease: "easeInOut" }}
+        >
           <img src={Preview} alt="" />
           <span className="project-heading">Avalon Acres</span>
           <p className="project-details">
@@ -67,12 +84,11 @@ const Projects = () => {
             real estate project that redefines luxury and comfort.
           </p>
           <div className="project-tech">
-            {" "}
-            <i class="bx bxl-mongodb">MongoDB</i>
-            <i class="bx bx-badge-check">Express.js</i>
-            <i class="bx bxl-react">React</i>
-            <i class="bx bxl-nodejs">Node.js</i>
-            <i class="bx bxl-vercel">Vercel</i>
+            <i className="bx bxl-mongodb">MongoDB</i>
+            <i className="bx bx-badge-check">Express.js</i>
+            <i className="bx bxl-react">React</i>
+            <i className="bx bxl-nodejs">Node.js</i>
+            <i className="bx bxl-vercel">Vercel</i>
           </div>
 
           <div className="project-buttons">
@@ -80,6 +96,7 @@ const Projects = () => {
               href="https://avalon-acres.vercel.app/"
               className="button button--flex"
               target="_blank"
+              rel="noopener noreferrer"
             >
               View
             </a>
@@ -87,13 +104,20 @@ const Projects = () => {
               href="https://github.com/kelvin-go-get/AvalonAcres"
               className="button button--flex"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Code
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div data-aos="flip-down" className="project">
+        <motion.div
+          className={`project ${isFlipped ? "flipped" : ""}`}
+          onClick={handleCardClick}
+          initial={{ transform: "rotateY(50deg)" }}
+          animate={{ transform: `rotateY(${isFlipped ? 360 : 0}deg)` }}
+          transition={{ duration: 3, ease: "easeInOut" }}
+        >
           <img src={Preview1} alt="" />
           <span className="project-heading">Fit Hub</span>
           <p className="project-details">
@@ -101,9 +125,9 @@ const Projects = () => {
             to streamline gym management and enhance user engagement.
           </p>
           <div className="project-tech">
-            <i class="bx bxl-react">React</i>
-            <i class="bx bxl-nodejs">Node.js</i>
-            <i class="bx bxl-vercel">Vercel</i>
+            <i className="bx bxl-react">React</i>
+            <i className="bx bxl-nodejs">Node.js</i>
+            <i className="bx bxl-vercel">Vercel</i>
           </div>
 
           <div className="project-buttons">
@@ -111,6 +135,7 @@ const Projects = () => {
               href="https://fit-hub-seven.vercel.app/"
               className="button button--flex"
               target="_blank"
+              rel="noopener noreferrer"
             >
               View
             </a>
@@ -118,13 +143,14 @@ const Projects = () => {
               href="https://github.com/kelvin-go-get/FitHub"
               className="button button--flex"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Code
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
