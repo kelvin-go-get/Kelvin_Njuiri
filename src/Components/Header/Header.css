@@ -7,7 +7,6 @@
   z-index: 11;
   /*backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
-  overflow: hidden;
 }
 @media screen and (min-width: 769px) {
   .header.blur {
@@ -62,7 +61,6 @@ ul:hover li a:not(:hover) {
 .nav_link:hover {
   color: var(--title-color);
 }
-
 
 /*BREAKPOINTS*/
 /*TABLET*/

@@ -3,34 +3,37 @@ import "./Home.css";
 import Social from "./Social";
 import Data from "./Data";
 import ScrollDown from "./ScrollDown";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+import { motion } from "framer-motion";
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000, 
-      easing: "ease-in-out",
-      once: false,
-    });
-
-   
-  }, []);
   return (
     <section className="home section" id="home">
-      <div className="home_container container grid">
+      <motion.div
+        initial={{ y: "10rem", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 3,
+          type: "spring",
+        }}
+        className="home_container container grid"
+      >
         <div className="home_content grid">
           <Social />
 
-          <div data-aos="zoom-in-up" className="home_image"></div>
+          <motion.div
+            initial={{ y: "10rem", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 3,
+              type: "spring",
+            }}
+            className="home_image"
+          ></motion.div>
 
           <Data />
         </div>
         <ScrollDown />
-      </div>
+      </motion.div>
     </section>
   );
 };
