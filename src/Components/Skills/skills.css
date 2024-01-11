@@ -1,6 +1,7 @@
 .skills {
   background-color: #eee;
   height: 550px;
+  overflow: hidden;
 }
 
 .skills_container {

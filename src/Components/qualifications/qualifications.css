@@ -1,5 +1,6 @@
 .qualification {
   background-color: #eee;
+  overflow: hidden;
 }
 .qualification_container {
   max-width: 768px;
