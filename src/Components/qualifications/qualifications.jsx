@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./qualifications.css";
 import { motion } from "framer-motion";
 
@@ -67,7 +67,7 @@ const Qualifications = () => {
                 <span className="qualification_subtitle">ALX Africa</span>
 
                 <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>Aug 2023 - present
+                  <i className="uil uil-calendar-alt"></i>Jan 2022 - Dec 2022
                 </div>
               </div>
 
@@ -107,12 +107,54 @@ const Qualifications = () => {
           >
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">Software Engineering</h3>
+                <h3 className="qualification_title">
+                  Software Engineer || Frontend Developer
+                </h3>
+
+                <span className="qualification_subtitle">Join Momentum</span>
+
+                <div className="qualification_calendar">
+                  <i className="uil uil-calendar-alt"></i>Jan 2024 - Present
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification_rounder"></span>
+
+                <span className="qualification_line"></span>
+              </div>
+            </div>
+
+            <div className="qualification_data">
+              <div></div>
+
+              <div>
+                <span className="qualification_rounder"></span>
+
+                <span className="qualification_line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualification_title">
+                  Software Engineer || Frontend Engineer
+                </h3>
+
+                <span className="qualification_subtitle">Naubank</span>
+
+                <div className="qualification_calendar">
+                  <i className="uil uil-calendar-alt"></i>Nov 2023 - Present
+                </div>
+              </div>
+            </div>
+
+            <div className="qualification_data">
+              <div>
+                <h3 className="qualification_title">Software Engineer</h3>
 
                 <span className="qualification_subtitle">ALX Africa</span>
 
                 <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>Aug 2023 - present
+                  <i className="uil uil-calendar-alt"></i>Aug 2023 - Dec 2023
                 </div>
               </div>
 

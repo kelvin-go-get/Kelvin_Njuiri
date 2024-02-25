@@ -51,11 +51,11 @@ const About = () => {
             }}
             className="about_description"
           >
-            I'm not just a coder; I'm a digital architect crafting the future.
+            " I'm not just a coder; I'm a digital architect crafting the future.
             With a passion for pixels and an eye for elegance, I turn complex
             concepts into intuitive interfaces. I thrive in the ever-evolving
             tech landscape, bringing fresh ideas to life with every line of
-            code.
+            code."
           </motion.p>
           <a download="" href={Resume} className="button button--flex">
             Download CV
