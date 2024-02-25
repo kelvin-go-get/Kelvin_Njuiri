@@ -30,7 +30,7 @@ const Footer = () => {
 
           <li>
             <a href="#qualification" className="footer_link">
-              Qualification
+              Qualifications
             </a>
           </li>
         </ul>
