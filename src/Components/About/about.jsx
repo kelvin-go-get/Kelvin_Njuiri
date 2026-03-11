@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./about.css";
-import AboutImg from "../../Assets/images/BID_0015.JPG";
-import Resume from "../../Assets/KELVIN-NJUIRI-RESUME.pdf";
+import AboutImg from "../../Assets/images/BID_0015.jpg";
+import Resume from "../../Assets/KELVIN-NJUIRI-CV.pdf";
 import Info from "./Info";
 import { motion } from "framer-motion";
 
