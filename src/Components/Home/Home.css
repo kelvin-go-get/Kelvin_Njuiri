@@ -81,7 +81,7 @@
     font-weight: 600;
   }
   .home_image {
-    background: url(../../Assets/images/BID_0012\ \(1\).jpg);
+    background: url(/images/BID_0012.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
