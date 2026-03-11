@@ -13,7 +13,7 @@ const Social = () => {
       className="home_social"
     >
       <a
-        href="https://linkedin.com/in/kelvin-njuiri-aa65842b1/"
+        href="https://www.linkedin.com/in/kelvin-njuiri-40b492346/"
         className="home_social-icon"
         target="_blank"
       >
@@ -21,7 +21,7 @@ const Social = () => {
       </a>
 
       <a
-        href="https://twitter.com/k_njuiri"
+        href="https://x.com/k31v9n"
         className="home_social-icon"
         target="_blank"
       >
